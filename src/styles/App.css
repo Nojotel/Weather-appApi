@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.App_container {
+  width: 400px;
+}
+
+.ForecastData {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.SearchBar {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.SearchBar input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.GetWeatherButton,
+.GetLocationButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+  border-radius: 24px;
+  width: 100%;
+}
+
+.GetWeatherButton:hover,
+.GetLocationButton:hover {
+  background-color: #2980b9;
+}
+
+.WeatherData {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.WeatherData img {
+  background-color: #3498db;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.error-text {
+  color: red;
+}
+
+@media screen and (max-width: 400px) {
+  .App_container {
+    width: 300px;
+  }
+}
